@@ -121,7 +121,7 @@ $(function() {
 
         $('body').addClass('menu-hidden');
         loadFeed(item.data('id'));
-        return false;
+        return false; // Assume this line prevents the default behavior.
     });
 
     /* When the menu icon is clicked on, we need to toggle a class
