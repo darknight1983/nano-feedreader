@@ -36,7 +36,7 @@ $(function() {
 
        // Test that the menu element is hidden by default
        it('menu hidden by default', function() {
-         expect($('body').attr('class')).toBe('menu-hidden')
+         expect($('body').hasClass('menu-hidden')).toBe(true)
        })
 
         /*
@@ -69,9 +69,8 @@ $(function() {
              })
            });
 
-          it('loads initial element', function(done) {
-            expect($('.feed').length).toBe(1);
-            done();
+          it('loads initial element', function() {
+            expect($('.feed .entry').length).toBeGreaterThan(1);
           })
 
 
