@@ -70,7 +70,7 @@ $(function() {
            });
 
           it('loads initial element', function() {
-            expect($('.feed .entry').length).toBeGreaterThan(1);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
           })
 
 
